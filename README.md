@@ -4,10 +4,6 @@ Here we have 2 main steps: prediction and update.
 
 In the prediction step, the algorithm uses a battery model to predict the current state based on the previous state and input. 
 
-<p align="center">
-  <img src="[http://some_place.com/image.png](https://github.com/Fireman9/SKteam_KLfilter/assets/78854637/ea9b5da5-1f6e-4654-b6c2-5d8c4edc2ea2)" />
-</p>
-
 The following equations represent the battery model:
 
 $$
