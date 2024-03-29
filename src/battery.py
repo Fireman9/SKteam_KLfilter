@@ -2,7 +2,7 @@
 # This file defines a Battery class for simulating a battery's behavior using a Thevenin model.
 
 import math as m
-from utils import Polynomial
+from Polynomial import Polynomial
 
 
 class Battery:
