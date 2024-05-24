@@ -149,6 +149,7 @@ package "Battery State Estimation System" {
     Battery --> Polynomial
 }
 @enduml
+```plantuml
 
 # Component Structure
 
