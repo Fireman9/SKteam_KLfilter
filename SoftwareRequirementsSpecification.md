@@ -107,5 +107,5 @@ The project is divided into the following components:
 - **launch_experiment_protocol**: Simulates a battery charge and discharge experiment by calling an external callback function with the desired current values at each time step.
 
 ## System Architecture Diagram
-(1.png)
+![Component Structure](1.png)
 
