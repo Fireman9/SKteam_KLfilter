@@ -1,6 +1,6 @@
 ---
 title: Battery State Estimation using Extended Kalman Filter
-author: [Your Name]
+author: [Stukanov Volodymyr]
 version: 1.0
 ---
 
@@ -9,13 +9,13 @@ version: 1.0
 ## Purpose
 The purpose of this document is to provide a comprehensive specification for a battery state estimation system using the Extended Kalman Filter (EKF). The system aims to accurately estimate the state of charge (SoC) of a battery in real-time.
 
-## References {#ref}
+## References
 - Kalman, R. E. (1960). A new approach to linear filtering and prediction problems. Journal of Basic Engineering.
 - [Matplotlib documentation](https://matplotlib.org/stable/contents.html)
 - [Numpy documentation](https://numpy.org/doc/stable/)
 - [PlantUML documentation](https://plantuml.com/)
 
-# Terminology {#term}
+# Terminology
 
 ## Definitions
 
