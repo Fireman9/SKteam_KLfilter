@@ -8,7 +8,7 @@ from ExtendedKalmanFilter import ExtendedKalmanFilter as EKF
 from experiment_protocol import launch_experiment_protocol
 
 
-def init_EKF(R0, R1, C1, std_dev, time_step):
+def init_EKF(R0, R1, C1, std_dev, time_step, Q_tot):
     """
     Configures and returns an instance of the Extended Kalman Filter (EKF) for battery state estimation.
 
@@ -126,7 +126,7 @@ if __name__ == '__main__':
     std_dev = 0.015
 
     # Get configured EKF
-    Kf = init_EKF(R0, R1, C1, std_dev, time_step)
+    Kf = init_EKF(R0, R1, C1, std_dev, time_step, Q_tot)
 
     time = [0]
     true_SoC = [battery_simulation.state_of_charge]
