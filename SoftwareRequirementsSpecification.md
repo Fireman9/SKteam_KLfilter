@@ -85,6 +85,27 @@ The battery state estimation system uses an EKF to estimate the SoC of a battery
 - Accurate polynomial coefficients for the OCV model.
 - Initial battery parameters: capacity, resistance, and capacitance values.
 
+# Component Structure
+
+The project is divided into the following components:
+
+## Main Component (`main.py`)
+- **init_EKF**: Initializes the Extended Kalman Filter with the given parameters.
+- **plot_simulation_results**: Plots the simulation results including true voltage, measured voltage, true SoC, estimated SoC, and current.
+- **update_simulation_step**: Updates the battery simulation and the EKF for the current time step.
+
+## Battery Component (`Battery.py`)
+- **Battery**: Simulates battery behavior using the Thevenin model. Includes methods for updating battery state, and properties for current, voltage, state of charge, and OCV.
+
+## Polynomial Component (`Polynomial.py`)
+- **Polynomial**: Represents and manipulates polynomials. Includes methods for evaluating the polynomial and computing its derivative.
+
+## Extended Kalman Filter Component (`ExtendedKalmanFilter.py`)
+- **ExtendedKalmanFilter**: Implements the EKF algorithm for state estimation of non-linear systems. Includes methods for updating and predicting the state estimate and covariance matrix.
+
+## Experiment Protocol Component (`launch_experiment_protocol.py`)
+- **launch_experiment_protocol**: Simulates a battery charge and discharge experiment by calling an external callback function with the desired current values at each time step.
+
 ## System Architecture Diagram
 ```plantuml
 @startuml
@@ -151,23 +172,3 @@ package "Battery State Estimation System" {
 @enduml
 ```plantuml
 
-# Component Structure
-
-The project is divided into the following components:
-
-## Main Component (`main.py`)
-- **init_EKF**: Initializes the Extended Kalman Filter with the given parameters.
-- **plot_simulation_results**: Plots the simulation results including true voltage, measured voltage, true SoC, estimated SoC, and current.
-- **update_simulation_step**: Updates the battery simulation and the EKF for the current time step.
-
-## Battery Component (`Battery.py`)
-- **Battery**: Simulates battery behavior using the Thevenin model. Includes methods for updating battery state, and properties for current, voltage, state of charge, and OCV.
-
-## Polynomial Component (`Polynomial.py`)
-- **Polynomial**: Represents and manipulates polynomials. Includes methods for evaluating the polynomial and computing its derivative.
-
-## Extended Kalman Filter Component (`ExtendedKalmanFilter.py`)
-- **ExtendedKalmanFilter**: Implements the EKF algorithm for state estimation of non-linear systems. Includes methods for updating and predicting the state estimate and covariance matrix.
-
-## Experiment Protocol Component (`launch_experiment_protocol.py`)
-- **launch_experiment_protocol**: Simulates a battery charge and discharge experiment by calling an external callback function with the desired current values at each time step.
