@@ -107,5 +107,5 @@ The project is divided into the following components:
 - **launch_experiment_protocol**: Simulates a battery charge and discharge experiment by calling an external callback function with the desired current values at each time step.
 
 ## System Architecture Diagram
-![Component Structure](1.png)
+![1](https://github.com/Fireman9/SKteam_KLfilter/assets/84972080/c2332f19-e0cc-4365-9dd6-fbdf4f50d6d3)
 
