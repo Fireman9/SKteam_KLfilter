@@ -1,12 +1,4 @@
-# Software Design Document
-
-## Title: Battery State Estimation using Extended Kalman Filter
-
-## Author: Stukanov Volodymyr
-
-## Version: 1.0
-
----
+## Software Design Document: Battery State Estimation using Extended Kalman Filter
 
 # Introduction
 

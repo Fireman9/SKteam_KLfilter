@@ -1,9 +1,3 @@
----
-title: Battery State Estimation using Extended Kalman Filter
-author: [Stukanov Volodymyr]
-version: 1.0
----
-
 # Introduction
 
 ## Purpose
