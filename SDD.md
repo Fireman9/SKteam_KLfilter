@@ -40,7 +40,7 @@ The purpose of this document is to provide a comprehensive design for the batter
 ## System Components
 
 1. **Battery Simulation (`Battery.py`)**
-    - Simulates battery behavior using a Thevenin model.
+    - Simulates battery behavior.
     - Provides methods to update the battery state and calculate the terminal voltage.
 
 2. **Polynomial Class (`Polynomial.py`)**
