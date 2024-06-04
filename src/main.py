@@ -3,8 +3,8 @@
 
 import numpy as np
 import math as m
-from Battery import Battery
-from ExtendedKalmanFilter import ExtendedKalmanFilter as EKF
+from battery import Battery
+from kalman_filter import ExtendedKalmanFilter as EKF
 from experiment_protocol import launch_experiment_protocol
 
 
