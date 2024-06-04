@@ -77,14 +77,6 @@ The purpose of this document is to provide a comprehensive design for the batter
 - The software runs experiments by simulating battery charge and discharge cycles.
 - The EKF algorithm processes measurements and provides SoC estimates in real-time.
 
-### Metrics
-
-| Type                     | Value                                                 |
-|--------------------------|-------------------------------------------------------|
-| Execution Time           | Varies depending on the length of the experiment.     |
-| Memory Usage             | Depends on the number of time steps and data points.  |
-| Accuracy of SoC Estimate | Depends on the EKF configuration and measurement noise. |
-
 ### Charts
 
 - SoC over Time
