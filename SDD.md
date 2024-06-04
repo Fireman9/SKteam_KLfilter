@@ -92,54 +92,6 @@ The purpose of this document is to provide a comprehensive design for the batter
 
 ![2](https://github.com/Fireman9/SKteam_KLfilter/assets/84972080/6bcaa157-6dfb-452d-be36-a56036df838f)
 
-# Data Structures
-
-## Battery Class
-
-```python
-class Battery:
-    def __init__(self, total_capacity, R0, R1, C1):
-        self.total_capacity = total_capacity * 3600
-        self.actual_capacity = self.total_capacity
-        self.R0 = R0
-        self.R1 = R1
-        self.C1 = C1
-        self._current = 0
-        self._RC_voltage = 0
-        self._OCV_model = Polynomial(
-            [3.1400, 3.9905, -14.2391, 24.4140, -13.5688, -4.0621, 4.5056])
-
-    def update(self, time_delta):
-        self.actual_capacity -= self._current * time_delta
-        exp_coeff = m.exp(-time_delta / (self.R1 * self.C1))
-        self._RC_voltage *= exp_coeff
-        self._RC_voltage += self.R1 * (1 - exp_coeff) * self._current
-
-    @property
-    def current(self):
-        return self._current
-
-    @current.setter
-    def current(self, current):
-        self._current = current
-
-    @property
-    def voltage(self):
-        return self.OCV - self.R0 * self.current - self._RC_voltage
-
-    @property
-    def state_of_charge(self):
-        return self.actual_capacity / self.total_capacity
-
-    @property
-    def OCV_model(self):
-        return self._OCV_model
-
-    @property
-    def OCV(self):
-        return self.OCV_model(self.state_of_charge)
-```
-
 # Interfaces
 
 ## Battery Simulation
