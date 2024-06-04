@@ -50,7 +50,6 @@ The battery state estimation system uses an EKF to estimate the SoC of a battery
 - Accurate modeling of battery behavior within practical limits of current and voltage
 
 ## Assumptions and Dependencies
-- Assumes availability of accurate OCV vs SoC data for the battery
 - Relies on external libraries: numpy, matplotlib
 
 # Specific Requirements
