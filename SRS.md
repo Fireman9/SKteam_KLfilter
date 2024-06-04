@@ -62,7 +62,7 @@ The battery state estimation system uses an EKF to estimate the SoC of a battery
 
 1. **Battery State Estimation**
    - Estimate the state of charge (SoC) of a battery using the EKF.
-   - Simulate battery voltage and current using the Thevenin model.
+   - Simulate battery voltage and current.
 
 2. **Simulation and Visualization**
    - Simulate battery behavior over time and update SoC and voltage at each time step.
