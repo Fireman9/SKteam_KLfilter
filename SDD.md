@@ -64,7 +64,6 @@ The purpose of this document is to provide a comprehensive design for the batter
 
 - Modular design allowing easy updates and maintenance.
 - Configurable parameters for battery model and EKF settings.
-- Real-time plotting of simulation results.
 
 ## Input/Output
 
