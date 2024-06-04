@@ -57,7 +57,6 @@ The battery state estimation system uses an EKF to estimate the SoC of a battery
 ## Interfaces
 
 - **User Interface:** The system provides visual plots for battery voltage, SoC, and current.
-- **Software Interface:** Interfaces with numpy for numerical calculations and matplotlib for plotting.
 
 ## Functional Requirements
 
