@@ -68,10 +68,6 @@ The battery state estimation system uses an EKF to estimate the SoC of a battery
    - Simulate battery voltage and current.
    - Plot true voltage, measured voltage, true SoC, estimated SoC, and current over time.
 
-# Data requirements
-- Accurate polynomial coefficients for the OCV model.
-- Initial battery parameters: capacity, resistance, and capacitance values.
-
 # Component Structure
 
 The project is divided into the following components:
