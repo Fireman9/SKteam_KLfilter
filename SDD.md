@@ -75,7 +75,7 @@ The purpose of this document is to provide a comprehensive design for the batter
 - SoC over Time
 - Voltage over Time
 
-## Graphical User Interface
+## User Interface
 
 - The program uses `matplotlib` for plotting the results.
 - No interactive GUI is provided; it is a command-line application.
