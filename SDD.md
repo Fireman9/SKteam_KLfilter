@@ -34,7 +34,7 @@ The purpose of this document is to provide a comprehensive design for the batter
 ## Features
 
 - Estimation of battery state of charge using EKF.
-- Simulation of battery behavior using a Thevenin model.
+- Simulation of battery behavior.
 - Visualization of battery voltage, SoC, and current over time.
 
 ## System Components
