@@ -8,11 +8,8 @@ from polynomial import Polynomial
 
 
 class TestBattery(unittest.TestCase):
-    battery: Optional[Battery] = None
-
-    @classmethod
-    def setUpClass(cls) -> None:
-        cls.battery = Battery(3.2, 0.062, 0.01, 3000) # some battery
+    def setUp(self) -> None:
+        self.battery = Battery(3.2, 0.062, 0.01, 3000) # some battery
 
     def test_init(self) -> None:
         """

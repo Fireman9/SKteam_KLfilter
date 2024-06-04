@@ -32,6 +32,19 @@ class TestPolynomial(unittest.TestCase):
         deriv_poly = self.poly.deriv
         self.assertEqual(deriv_poly._coeffs, [2, 6, 12])
 
+    def test_zero_polynomial(self):
+        """
+        Tests the behavior of a zero Polynomial object
+        """
+        zero_poly = Polynomial([0])
+        self.assertEqual(zero_poly._coeffs, [0])
+        self.assertEqual(zero_poly._deg, 0)
+        self.assertEqual(zero_poly(0), 0)
+        self.assertEqual(zero_poly(10), 0)
+        self.assertEqual(zero_poly(-5), 0)
+        self.assertEqual(zero_poly.deriv._coeffs, [])
+        self.assertEqual(zero_poly.deriv._deg, -1)
+
 
 if __name__ == '__main__':
     unittest.main()

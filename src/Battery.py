@@ -87,6 +87,8 @@ if __name__ == '__main__':
         voltage.append(my_battery.voltage)
 
 
+    plt.xlabel('State of charge')
+    plt.ylabel('Voltage')
     plt.xlim(0,1)
     plt.plot(SoC, OCV, label="OCV")
     plt.plot(SoC, voltage, label="Total voltage")
