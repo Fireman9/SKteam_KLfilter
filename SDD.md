@@ -19,7 +19,7 @@ The purpose of this document is to provide a comprehensive design for the batter
 |-----------------------|---------------------------------------------------------|
 | State of Charge (SoC) | The current charge of the battery as a percentage of its total capacity. |
 | Open Circuit Voltage (OCV) | The voltage of the battery when no current is flowing. |
-| Thevenin Model        | An electrical circuit model used to represent the battery. |
+| Extended Kalman Filter (EKF) | A recursive algorithm for estimating the state of a dynamic system|
 
 ## Abbreviations
 
