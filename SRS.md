@@ -17,6 +17,7 @@ The purpose of this document is to provide a comprehensive specification for a b
 |-------------------------|------------------------------------------------------------|
 | State of Charge (SoC)   | The remaining capacity of a battery expressed as a percentage|
 | Extended Kalman Filter (EKF) | A recursive algorithm for estimating the state of a dynamic system|
+| Thevenin model | The model describes the fixed parameters in the classic model as variables with the state of charge and temperature dynamics.|
 
 ## Abbreviations
 
