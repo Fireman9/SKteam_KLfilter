@@ -70,13 +70,6 @@ The purpose of this document is to provide a comprehensive design for the batter
 - **Input:** Battery parameters, current values, measurement noise.
 - **Output:** Estimated state of charge, battery voltage, current, and plots of the results.
 
-## Software Performance
-
-### Stand description
-
-- The software runs experiments by simulating battery charge and discharge cycles.
-- The EKF algorithm processes measurements and provides SoC estimates in real-time.
-
 ### Charts
 
 - SoC over Time
