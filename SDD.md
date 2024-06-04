@@ -81,7 +81,6 @@ The purpose of this document is to provide a comprehensive design for the batter
 
 - SoC over Time
 - Voltage over Time
-- Current over Time
 
 ## Graphical User Interface
 
