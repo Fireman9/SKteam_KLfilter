@@ -26,7 +26,7 @@ The purpose of this document is to provide a comprehensive specification for a b
 | SoC          | State of Charge        |
 | OCV          | Open Circuit Voltage   |
 
-# System Overall Description {#overall}
+# System Overall Description
 
 ## Product Overview
 The battery state estimation system uses an EKF to estimate the SoC of a battery. It simulates the battery's behavior over time and provides real-time updates on the SoC and voltage.
@@ -40,7 +40,7 @@ The battery state estimation system uses an EKF to estimate the SoC of a battery
 ## Constraints
 
 **Implementation restrictions**
-- The system must be implemented in Python 3.x
+- The system must be implemented in Python 3
 - Must use standard libraries such as numpy and matplotlib
 
 **Resource limits**
