@@ -4,7 +4,7 @@ Here we have 2 main steps: prediction and update.
 
 In the prediction step, the algorithm uses a battery model to predict the current state based on the previous state and input. 
 
-The following equations represent the battery model:
+The following equations represents the prediction step:
 
 $$
 x_k = Ax_{k-1} + Bu_k + w_k
