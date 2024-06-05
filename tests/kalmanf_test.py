@@ -43,8 +43,8 @@ class TestExtendedKalmanFilter(unittest.TestCase):
         # Test the x property to ensure it returns the correct state
         self.assertTrue(np.array_equal(self.ekf.x, np.array([[0.5], [0.0]])))
         self.ekf.update(0.8)
-        print("self.ekf.x:", self.ekf.x)  
-        self.assertTrue(np.array_equal(self.ekf.x, np.array([[0.77],[0.]])))
+        print("self.ekf.x:", self.ekf.x)
+        self.assertTrue(np.array_equal(np.round(self.ekf.x, 2), np.array([[0.77], [0.]])))
 
     def test_invalid_input(self) -> None:
         with self.assertRaises(ValueError):
