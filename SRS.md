@@ -44,9 +44,6 @@ The battery state estimation system uses an EKF to estimate the SoC of a battery
 - The system must be implemented in Python 3
 - Must use standard libraries such as numpy and matplotlib
 
-**Resource limits**
-- Must run efficiently on a typical personal computer
-
 **Data limits**
 - Accurate modeling of battery behavior within practical limits of current and voltage
 
