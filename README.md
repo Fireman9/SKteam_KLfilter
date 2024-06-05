@@ -41,13 +41,13 @@ $$
 
 where:
 
-* $\hat{x}_k^-$ is the predicted state at time $k$
+* $\hat{x}_k^-$ - predicted state at time $k$
 * $f$ - nonlinear function of the model
 * $\hat{x}_{k-1}$ - state estimation at the previous moment of time $k-1$
 * $u_k$ - control action (like battery charging/discharging current)
 * $P_k^-$ - predicted error covariance matrix
-* $F_k$ is the Jacobi matrix of the function $f$ computed in $\hat{x}_{k-1}$
-* $P_{k-1}$ is the error covariance matrix at the previous moment of time $k-1$
+* $F_k$ - Jacobi matrix of the function $f$ computed in $\hat{x}_{k-1}$
+* $P_{k-1}$ - error covariance matrix at the previous moment of time $k-1$
 * $Q_k$ - covariance matrix of the process noise
 
 
