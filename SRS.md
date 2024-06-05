@@ -16,6 +16,7 @@ The purpose of this document is to provide a comprehensive specification for a b
 | Term                    | Definition                                                |
 |-------------------------|------------------------------------------------------------|
 | State of Charge (SoC)   | The remaining capacity of a battery expressed as a percentage|
+| Open Circuit Voltage (OCV) | The voltage of the battery when no current is flowing. |
 | Extended Kalman Filter (EKF) | A recursive algorithm for estimating the state of a dynamic system|
 | Thevenin model | The model describes the fixed parameters in the classic model as variables with the state of charge and temperature dynamics.|
 
@@ -43,9 +44,6 @@ The battery state estimation system uses an EKF to estimate the SoC of a battery
 **Implementation restrictions**
 - The system must be implemented in Python 3
 - Must use standard libraries such as numpy and matplotlib
-
-**Resource limits**
-- Must run efficiently on a typical personal computer
 
 **Data limits**
 - Accurate modeling of battery behavior within practical limits of current and voltage
