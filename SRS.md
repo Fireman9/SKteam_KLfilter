@@ -24,6 +24,7 @@ The purpose of this document is to provide a comprehensive specification for a b
 | Abbreviation | Description |
 |--------------|-------------|
 | EKF          | Extended Kalman Filter |
+| Open Circuit Voltage (OCV) | The voltage of the battery when no current is flowing. |
 | SoC          | State of Charge        |
 | OCV          | Open Circuit Voltage   |
 
