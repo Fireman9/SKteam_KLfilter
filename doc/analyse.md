@@ -16,18 +16,10 @@
 
 Based on the insights from existing projects, we introduce an example of the potential function set:
 
-1. **Adaptability**: Let's incorporate adaptive filtering techniques (similar to AUKF) to handle large initial errors and adapt to wide temperature ranges and different driving cycles.
+1. **Model Accuracy and Robustness**: We can employ model-driven methods for enhanced robustness against measurement noise and imprecise SOC initialization, as seen in EKF-based systems.
 
-2. **Dual Estimation Approach**: Like the dual extended KF approach, integrate parameter estimation to handle non-linear behaviours such as self-discharge and cell degradation effectively.
+2. **Real-Time Processing**: Let's ensure that the algorithm can perform real-time SOC estimation, balancing computational efficiency with estimation accuracy.
 
-3. **Model Accuracy and Robustness**: We can employ model-driven methods for enhanced robustness against measurement noise and imprecise SOC initialization, as seen in EKF-based systems.
-
-4. **Real-Time Processing**: Let's ensure that the algorithm can perform real-time SOC estimation, balancing computational efficiency with estimation accuracy.
-
-5. **Environmental Adaptability**: Incorporate features to adjust for environmental factors such as temperature and driving conditions that affect SOC readings.
-
-6. **User Feedback Integration**: We can design the system to collect and integrate user feedback for continuous improvement of SOC estimation accuracy.
-
-7. **Scalability and Compatibility**: Let's ensure that the solution is scalable to different battery types and compatible with various BMS architectures to maximize its applicability.
+3. **Scalability and Compatibility**: Let's ensure that the solution is scalable to different battery types and compatible with various BMS architectures to maximize its applicability.
 
 By integrating these features, the new project aims to overcome the downsides observed in existing systems while enhancing their upsides for better performance and reliability.
